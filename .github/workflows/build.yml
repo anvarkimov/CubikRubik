@@ -15,5 +15,5 @@ jobs:
       - run: gradle assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
         with:
-          name: KubYechuvchi-apk
+          name: CubikRubik-apk
           path: app/build/outputs/apk/debug/app-debug.apk

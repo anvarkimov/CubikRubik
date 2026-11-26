@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧊 Куб Ечувчи
+# 🧊 CubikRubik
 
 **Рубик кубигини расмга олинг — илова ўзи ечимни топиб, 3D кубикда айлантириб кўрсатади.**
 
@@ -32,7 +32,7 @@ APK ҳар гал код ўзгарганда GitHub Actions орқали авт
 
 1. Репода **Actions** бўлимини очинг.
 2. Энг охирги муваффақиятли **Build APK** ишини босинг.
-3. Пастдаги **Artifacts** → **KubYechuvchi-apk** ни юклаб, ичидан `app-debug.apk` ни олинг.
+3. Пастдаги **Artifacts** → **CubikRubik-apk** ни юклаб, ичидан `app-debug.apk` ни олинг.
 4. Телефонга ўтказиб ўрнатинг (**«Номаълум манбалардан ўрнатиш»** рухсати сўралиши мумкин).
 
 > Қўлда ишга тушириш: **Actions → Build APK → Run workflow**.
@@ -54,7 +54,7 @@ iPhone учун APK йўқ. Ўрнига саҳифани Safari'да очиб, 
 ## 🏗 Лойиҳа тузилиши
 
 ```
-KubYechuvchi/
+CubikRubik/
 ├─ app/src/main/assets/index.html   ← бутун илова (UI + ечувчи + WebGL кубик)
 ├─ app/src/main/java/.../MainActivity.java   ← WebView ва камера/галерея
 ├─ .github/workflows/build.yml      ← APK автоматик йиғиш
