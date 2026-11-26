@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  issues: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,9 +14,11 @@ jobs:
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: '17' }
       - uses: android-actions/setup-android@v3
-      - uses: gradle/actions/setup-gradle@v4
-        with: { gradle-version: '8.7' }
-      - run: gradle assembleDebug --no-daemon
+      - name: Build debug APK
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee build.log
+          test ${PIPESTATUS[0]} -eq 0
       - name: Rename APK
         run: |
           VER="$(cat VERSION)"
@@ -36,3 +39,10 @@ jobs:
           else
             gh release create "v${VER}" "$APK" --target "$GITHUB_SHA" --title "CubikRubik v${VER}" --notes-file RELEASE_NOTES.md
           fi
+      - name: Report build failure as an issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { echo '### Build failed'; echo '```'; tail -n 60 build.log 2>/dev/null || echo "no build.log"; echo '```'; } > issue.md
+          gh issue create --title "Build failed: ${GITHUB_SHA::7}" --body-file issue.md
