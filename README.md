@@ -1,83 +1,84 @@
+<p align="center"><a href="README.md">🇬🇧 English</a> · <a href="README.ru.md">🇷🇺 Русский</a> · <a href="README.uz.md">🇺🇿 Ўзбекча</a></p>
+
 <div align="center">
 
 # 🧊 CubikRubik
 
-**Рубик кубигини расмга олинг — илова ўзи ечимни топиб, 3D кубикда айлантириб кўрсатади.**
+**Photograph your Rubik's cube — the app finds the solution and shows it by rotating a 3D cube.**
 
 ![Platform](https://img.shields.io/badge/platform-Android%20%7C%20Web-6d9bff)
-![Style](https://img.shields.io/badge/UI-Liquid%20Glass-8fd0ff)
+![UI](https://img.shields.io/badge/UI-Liquid%20Glass-8fd0ff)
 ![Solver](https://img.shields.io/badge/solver-Kociemba%20two--phase-78f2b6)
-![Offline](https://img.shields.io/badge/offline-ha-ffd60a)
+![Offline](https://img.shields.io/badge/offline-yes-ffd60a)
+![Languages](https://img.shields.io/badge/languages-UZ%20%7C%20RU%20%7C%20EN-ff9a9a)
 
 <img src="docs/1-scan.png" width="180"> <img src="docs/2-review.png" width="180"> <img src="docs/3-solve.png" width="180"> <img src="docs/5-learn.png" width="180"> <img src="docs/4-settings.png" width="180">
 
 </div>
 
-## ✨ Имкониятлар
+## ✨ Features
 
-- 📸 **6 томонни расмга олиш** — ҳар томонга йўриқнома ва рангли йўналтирувчи.
-- 🎨 **Рангларни автоматик аниқлаш** — LAB рангли фазода, марказлар бўйича. Хато бўлса, қўлда тузатиш мумкин.
-- 🧠 **Тезкор ечувчи** — Kociemba икки фазали алгоритми, одатда 20 га яқин ҳаракат. Ҳисоблаш фонда (Web Worker), экран қотмайди.
-- 🧊 **Силлиқ 3D кубик** — ўз WebGL2 рендерери, юмшоқ тезланиш/секинлашиш, бармоқ билан айлантириш.
-- ▶️ **Қадамма-қадам кўрсатиш** — ўйнатиш, тўхтатиш, олдинга/орқага, тезликни созлаш, ҳаракат рўйхатидан сакраш.
-- 🪟 **Liquid Glass дизайн** — шиша панеллар, ёруғлик акси, пастда шиша навигация.
-- 🌍 **3 тил** — Ўзбекча (кирилл), Русский, English. Тил қурилма тилига қараб танланади, ⚙ созламалардан ўзгартирилади.
-- 🎓 **Ўрганиш (Дарс) бўлими** — расмсиз ҳам: «пиф-паф» (R U R' U') ва 7 та дарс, ҳар бири 3D кубикда кўрсатилади. «Тасодифий аралаштириш» машқи ҳам бор.
-- ⚙️ **Созламалар** — тил, анимация тезлиги, автоайланиш ва иловага қисқа йўриқнома.
-- 📴 **Интернетсиз ишлайди** — ҳамма нарса илова ичида.
+- 📸 **Scan 6 faces** with on-screen guidance and a colour-coded centre hint.
+- 🎨 **Automatic colour detection** in LAB colour space, anchored on the centres. Fix any mistake by hand.
+- 🧠 **Fast solver** — Kociemba two-phase algorithm, usually around 20 moves. Runs in a Web Worker so the UI never freezes.
+- 🧊 **Smooth 3D cube** — custom WebGL2 renderer, eased animation, drag to rotate.
+- ▶️ **Step-by-step playback** — play, pause, step forward/back, speed control, jump from the move list.
+- 🪟 **Liquid Glass design** — glass panels, specular highlights, floating glass dock.
+- 🌍 **3 languages** — Ўзбекча (Cyrillic), Русский, English. Chosen from the device language; change it in ⚙ Settings.
+- 🎓 **Learn tab** — works without photos: the "pif-paf" (R U R' U') and 8 more lessons, each demonstrated on the 3D cube, plus a random-scramble practice mode.
+- ⚙️ **Settings** — language, animation speed, auto-rotate and a short guide to the app.
+- 📴 **Works offline** — everything is bundled.
 
-## 📲 APK олиш (Android)
+## 📲 Download the APK (Android)
 
-APK ҳар гал код ўзгарганда GitHub Actions орқали автоматик йиғилади.
+1. Open **[Releases](../../releases/latest)** on the right side of this repo.
+2. Download **`CubikRubik-vX.Y.Z.apk`** from the latest release and install it (Android may ask you to allow "Install from unknown sources").
 
-1. Репода **Actions** бўлимини очинг.
-2. Энг охирги муваффақиятли **Build APK** ишини босинг.
-3. Пастдаги **Artifacts** → **CubikRubik-apk** ни юклаб, ичидан `app-debug.apk` ни олинг.
-4. Телефонга ўтказиб ўрнатинг (**«Номаълум манбалардан ўрнатиш»** рухсати сўралиши мумкин).
-
-> Қўлда ишга тушириш: **Actions → Build APK → Run workflow**.
+> A new release is built automatically by GitHub Actions whenever a tag like `vX.Y.Z` is pushed. Every push also produces an APK under **Actions → Build APK → Artifacts**.
 
 ## 🍎 iPhone
 
-iPhone учун APK йўқ. Ўрнига саҳифани Safari'да очиб, **Улашиш → Бош экранга қўшиш** ни босинг — у иловадек тўлиқ экранда очилади.
+There is no APK for iPhone. Open the web version in Safari and choose **Share → Add to Home Screen** — it opens full screen like an app.
 
-## 🧭 Қандай фойдаланилади
+## 🧭 How to use
 
-| Қадам | Нима қиламиз |
+| Step | What you do |
 |---|---|
-| **1. Расм** | Олд, ўнг, орқа, чап, тепа, паст томонларни кетма-кет расмга оламиз. Кубик кадрнинг ярмидан кўпини эгалласин, ёруғ жой бўлсин. |
-| **2. Текшириш** | Аниқланган рангларни кўриб чиқамиз. Хато бўлса, рангни танлаб катакка босамиз. Ҳар ранг 9 тадан бўлиши керак. |
-| **3. Ечим** | «Ечимни топиш» босилади. Кубик ўзи айланиб йиғилади, ҳаракат белгилари пастда кўринади. |
+| **1. Photo** | Photograph the front, right, back, left, top and bottom faces in turn. The cube should fill over half the frame, in good light. |
+| **2. Check** | Review the detected colours; to fix one, pick a colour and tap the cell. Each colour must appear 9 times. |
+| **3. Solve** | Tap "Find solution". The cube rotates itself to solve; the move list sits below. |
+| **4. Learn** | No photos needed — pick a lesson and watch the algorithm on the 3D cube. |
 
-Расмсиз ўрганиш учун **Дарс** белгисини босинг. Тезкор синаш учун 1-саҳифадаги **«Намуна билан синаш»** тугмасидан фойдаланинг.
+Tip: tap **"Try an example"** on the first screen to test it quickly.
 
-## 🏗 Лойиҳа тузилиши
+## 🏗 Project structure
 
 ```
 CubikRubik/
-├─ app/src/main/assets/index.html   ← бутун илова (UI + ечувчи + WebGL кубик)
-├─ app/src/main/java/.../MainActivity.java   ← WebView ва камера/галерея
-├─ .github/workflows/build.yml      ← APK автоматик йиғиш
-└─ docs/                            ← скриншотлар
+├─ app/src/main/assets/index.html            ← the whole app (UI + solver + WebGL cube)
+├─ app/src/main/java/.../MainActivity.java   ← WebView, camera / gallery
+├─ .github/workflows/build.yml               ← APK build + GitHub Release
+└─ docs/                                     ← screenshots
 ```
 
-Илова — битта `index.html` ичидаги веб-илова, Android'да `WebView` ичида ишлайди. Веб-версияни шунчаки браузерда очиш ҳам мумкин.
+The app is a single `index.html` web app running inside an Android `WebView`; you can also open it in any browser.
 
-## 🔧 Қўлда йиғиш
+## 🔧 Build manually
 
-Талаб: JDK 17, Android SDK 34, Gradle 8.7.
+Requirements: JDK 17, Android SDK 34, Gradle 8.7.
 
 ```bash
 gradle assembleDebug
-# natija: app/build/outputs/apk/debug/app-debug.apk
+# output: app/build/outputs/apk/debug/app-debug.apk
 ```
 
-## 🧪 Техник тафсилотлар
+## 🧪 Technical notes
 
-- Кубик ҳолати расмдан `URFDLB` тартибида ўқилади, ҳолат тўғрилиги (бурилиш, жуфтлик, перестановка) текширилади.
-- Ечувчи: twist, flip ва UD-slice координаталари, BFS билан тузилган таянч жадваллар, IDA* қидирув.
-- Рендерер: думалоқ қиррали куб, SDF стикерлар, процедуравий акс, `requestAnimationFrame` вақт чизиғи.
+- The cube state is read in `URFDLB` facelet order and validated (twist, flip, permutation parity).
+- Solver: twist, flip and UD-slice coordinates, BFS pruning tables, IDA* search.
+- Renderer: rounded-box mesh, SDF stickers, procedural reflections, `requestAnimationFrame` timeline.
+- Photos: EXIF orientation is handled manually so rotated camera images are read correctly.
 
-## 📄 Лицензия
+## 📄 License
 
 MIT
