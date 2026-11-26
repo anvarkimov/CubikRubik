@@ -34,7 +34,7 @@
 1. Open **[Releases](../../releases/latest)** on the right side of this repo.
 2. Download **`CubikRubik-vX.Y.Z.apk`** from the latest release and install it (Android may ask you to allow "Install from unknown sources").
 
-> A new release is built automatically by GitHub Actions whenever a tag like `vX.Y.Z` is pushed. Every push also produces an APK under **Actions → Build APK → Artifacts**.
+> A new release is built automatically by GitHub Actions whenever the number in the `VERSION` file changes. Every push also produces an APK under **Actions → Build APK → Artifacts**.
 
 ## 🍎 iPhone
 
