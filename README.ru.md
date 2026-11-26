@@ -2,7 +2,9 @@
 
 <div align="center">
 
-# 🧊 CubikRubik
+<img src="docs/icon.png" width="120" alt="CubikRubik"><br>
+
+# CubikRubik
 
 **Сфотографируйте кубик Рубика — приложение найдёт решение и покажет его на вращающемся 3D-кубике.**
 

@@ -2,7 +2,9 @@
 
 <div align="center">
 
-# 🧊 CubikRubik
+<img src="docs/icon.png" width="120" alt="CubikRubik"><br>
+
+# CubikRubik
 
 **Рубик кубигини расмга олинг — илова ўзи ечимни топиб, 3D кубикда айлантириб кўрсатади.**
 

@@ -2,7 +2,9 @@
 
 <div align="center">
 
-# 🧊 CubikRubik
+<img src="docs/icon.png" width="120" alt="CubikRubik"><br>
+
+# CubikRubik
 
 **Photograph your Rubik's cube — the app finds the solution and shows it by rotating a 3D cube.**
 
